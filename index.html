@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protrade trial</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div id="logo">
+        <img
+          src="https://protrade-trial.vndirect.com.vn/static/media/pt_trial.a0934fd1.svg"
+          height="40px"
+          alt="logo"
+        />
+      </div>
+      <div id="vnds-clock">
+        <span>11:00:14</span>
+        <span>2021/12/20</span></div>
+      <div id="horizontal-menu">
+        <ul class="horizontal-menu-root">
+          <li><a href="#" style="color: #f7941d;">Trang chủ</a></li>
+          <li><a href="#">Tài sản</a></li>
+          <li><a href="#">Hướng dẫn</a></li>
+        </ul>
+      </div>
+      <span id="profitloss" 
+        >Lãi/Lỗ: 0
+        <span class="top"
+          ><i class="fa fa-trophy"></i> Top cao thủ phái sinh</span
+        ></span
+      >
+      <div class="menu" id="menuWrap">
+        <div id="demo">BẢN TRIAL</div>
+        <div class="show-custody-id">
+          <a href="#">Nâng cấp tài khoản</a>
+        </div>
+        <div class="account-dropdown">
+          <div class="account-dropdown-btn">
+            <span class="btn-icon">
+              <i class="fa fa-user user-icon"></i>
+              Tran Trung Hieu
+              <i class="fa fa-caret-down"></i>
+            </span>
+          </div>
+          <div class="account-dropdown-list">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="col1">
+        <div class="chart">
+          
+          <iframe src="https://dchart.vndirect.com.vn/?theme=dark&timeframe=1" frameborder="0"></iframe>
+          <!-- <iframe src="https://www.tradingview.com/chart/T7zdhTin" frameborder="0"></iframe> -->
+          <!-- <iframe src="https://dchart.vndirect.com.vn/?theme=dark&timeframe=1&disableSyncSymbol=true&symbol=VN30F1M&domain=https://protrade-trial.vndirect.com.vn&t=function%20now()%20{%20[native%20code]%20}" frameborder="0"></iframe>         -->
+        </div>
+        <div class="ui-jqchart">
+          <iframe src="https://mkw.vndirect.com.vn/leader_lagger?color=gray&height=280" frameborder="0"></iframe>
+        </div>
+        <div class="footer-col1">
+          <div class="copyright">
+            <span>Bản quyền thuộc về VNDIRECT © 2021. v2.2.2</span>
+          </div>
+          <div class="menus">
+              <a href="">VN30 INTRADAY</a>
+              <a href="">VN30</a></li>
+              <i class="fas fa-chart-bar" style="color: #f7941d;"></i>
+              <i class="fas fa-chart-pie"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col2">
+        <div class="history">
+          <div class="derivative-info">
+            <span class="symbol">VN30F2201</span>
+            <span>Sàn:</span>
+            <span>TC:</span>
+            <span>Trần:</span>
+            <span>1413.6</span>
+            <span>1520.0</span>
+            <span>1626.4</span>
+          </div>
+          <div class="tab">
+            <a href="#" style="color: #f7941d;">Bước giá</a>
+            <a href="#" >Lịch sử khớp lệnh</a>
+          </div>
+          <div class="derivative-info-table">
+            <table>
+              <colgroup>
+                <col width="20%" />
+                <col width="30%" />
+                <col width="30%" />
+                <col width="20%" />
+              </colgroup>
+              <tr>
+                <th>KL Mua</th>
+                <th>Giá mua</th>
+                <th>Giá bán</th>
+                <th>KL Bán</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 30%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 50%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 20%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 32%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 5%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 80%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 60%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 35%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 10%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 40%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 70%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 15%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 50%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 30%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 10%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 35%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 80%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 10%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 50%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 30%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr><tr>
+                  <td style="text-align: center">55</td>
+                  <td class="derivative-buy-price"style="color: red;">1626.4
+                    <div class="ratio-buy" style="width: 25%;"></div>
+                  </td>
+                  <td class="derivative-cell-price" style="text-align: right; color: red">1413.6
+                    <div class="ratio-cell" style="width: 15%;"></div>            
+                  </td>
+                  <td style="text-align: center">83</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="watchlist">
+          <table>
+            <colgroup>
+              <col width="25%" />
+              <col width="18%" />
+              <col width="16%" />
+              <col width="16%" />
+              <col width="25%" />
+            </colgroup>
+            <tr>
+              <th>Mã</th>
+              <th>Giá</th>
+              <th>
+                <i class="fa fa-caret-left"></i> +/-
+                <i class="fa fa-caret-right"></i>
+              </th>
+              <th>Lệch</th>
+              <th>Tổng KL</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+              <tr>
+                <td style="color: red">VN30F2202</td>
+                <td style="text-align: center; color: red">1,508</td>
+                <td style="text-align: center; color: red">-12,0</td>
+                <td style="text-align: center; color: red">-5,60</td>
+                <td style="text-align: right">128,827</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col3">
+        <div class="orderbook">
+          <div class="title">
+            <div class="title-item">
+              <a href="#" href="#" style="color: #f7941d;">Lệnh trong ngày</a>
+              <a href="#">Lệnh điều kiện</a>
+              <div class="title-icon">
+                <i class="fas fa-sync-alt"></i>
+                <i class="fa fa-minus close"></i>
+              </div>
+            </div>
+          </div>
+          <table class="command-list">
+            <colgroup>
+              <col width="20px" />
+              <col width="50px" />
+              <col width="90px" />
+              <col width="70px" />
+              <col width="60px" />
+            </colgroup>
+            <tr>
+              <th>Lệnh</th>
+              <th>Mã</th>
+              <th>KL Khớp</th>
+              <th>Giá</th>
+              <th>TT</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td colspan="6" class="no-order">
+                  Chưa có lệnh nào trong sổ lệnh
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="placeorder">
+          <div class="place-form">
+            <div class="row">
+              <ul>
+                <li>
+                  <input type="radio" value="Normal" name="Normal"/> Lệnh thường
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    value="BuySellStop"
+                    name="BuySellStop"
+                  /> Lệnh Stop
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    value="TrailingStop"
+                    name="TrailingStop"
+                  /> Lệnh trailing
+                </li>
+                <li>
+                  <input type="radio" value="OSO" name="OSO" /> Lệnh OSO
+                </li>
+              </ul>
+            </div>
+            <form action="" id="placeorder-form">
+                <div class="wrap-input">
+                    <label for="">Mã HĐTL:</label>
+                    <input type="text" value=" VN30F2201">
+                </div>
+                <div class="wrap-input">
+                    <label for="">Giá đặt:</label>
+                    <input type="text" placeholder=" Giá">
+                </div>
+                <div class="wrap-input">
+                    <label for="">Khối lượng</label>
+                    <input type="text" placeholder=" KL">
+                </div>
+            </form>
+            <div class="wrap-btn btn">
+                <button class="buy" tabindex="8">MUA</button>
+                <button class="sell" tabindex="9">BÁN</button>
+                <div class="save-order"><input type="checkbox" id="save-order" readonly="" value="on"><label for="save-order"> Lưu lệnh</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-fixed">
+        <a href="#" style="color: #f7941d; background-color: #2f3240;">Sổ lệnh</a>
+        <a href="#">Danh mục</a>
+        <a href="#">Tài sản</a>
+      </div>
+    </div>
+  </body>
+</html>
