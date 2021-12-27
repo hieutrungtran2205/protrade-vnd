@@ -4,6 +4,15 @@ body {
   color: #fff !important;
 }
 
+table {
+  color: #fff !important;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #header,
 nav {
   height: 40px;
@@ -16,21 +25,17 @@ nav {
   color: #fff;
 }
 
-#header a.active {
+#header a:hover {
+  color: #f7941d;
+}
+
+#header a.active,
+#main-content a.active {
   color: #f7941d;
 }
 
 #main-content .row {
   height: calc(100vh - 40px);
-}
-
-table {
-  color: #fff !important;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
 }
 
 #main-content .chart {
@@ -67,4 +72,20 @@ iframe {
   height: 40%;
   margin: 1px;
   background-color: #2f3240;
+}
+
+#header .account-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  min-width: 152px;
+  height: 40px;
+  text-align: right;
+  background-color: #000;
+  border-top: 1px solid #f7941d;
+  display: none;
+}
+
+#header .account:hover .account-dropdown {
+  display: block;
 }
