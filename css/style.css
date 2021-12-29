@@ -289,7 +289,7 @@ i {
 
 .derivative-cell-price {
   position: relative;
-  border-top: 0.5px solid #444;
+  border-left: 0.5px solid #444;
 }
 
 .ratio-buy {
@@ -322,6 +322,11 @@ i {
   background: hsla(0, 0%, 47.1%, 0.15);
 }
 
+.col2 .watchlist table td {
+  text-align: center;
+  color: red;
+}
+
 .col3 {
   display: flex;
   flex-direction: column;
@@ -334,14 +339,14 @@ i {
   background-color: #2f3240;
 }
 
-.col3 .orderbook .title .title-item {
+.col3 .orderbook .title {
   display: flex;
   justify-content: space-around;
   height: 40px;
   line-height: 40px;
 }
 
-.col3 .orderbook .title .title-item .title-icon {
+.col3 .orderbook .title .title-icon {
   display: flex;
   width: 40px;
   justify-content: space-between;
@@ -362,13 +367,13 @@ i {
   background-color: #2f3240;
 }
 
-.col3 .placeorder .place-form .row {
+.col3 .placeorder .row-radio {
   height: 60px;
   line-height: 60px;
   margin: 0 16px;
 }
 
-.col3 .placeorder .place-form .row ul {
+.col3 .placeorder .row-radio ul {
   display: flex;
   justify-content: space-between;
 }
@@ -390,7 +395,7 @@ i {
   border-radius: 4px;
 }
 
-.col3 .placeorder .place-form .btn button {
+.col3 .placeorder .btn {
   width: 110px;
   height: 30px;
   margin: 0 5px;
@@ -401,24 +406,24 @@ i {
   cursor: pointer;
 }
 
-.col3 .placeorder .place-form .btn button.buy {
+.col3 .placeorder .btn.btn-buy {
   background-color: green;
   color: #fff;
 }
 
-.col3 .placeorder .place-form .btn button.sell {
+.col3 .placeorder .btn.btn-sell {
   background-color: red;
   color: #fff;
 }
 
-.col3 .placeorder .place-form .wrap-btn {
+.col3 .placeorder .wrap-btn {
   display: flex;
   justify-content: flex-end;
   margin: 16px;
 }
 
-.col3 .placeorder .place-form .save-order {
-  line-height: 30px;
+.col3 .placeorder .save-order {
+  padding: 8px;
   cursor: pointer;
 }
 
