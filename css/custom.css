@@ -13,24 +13,42 @@ iframe {
   height: 100%;
 }
 
-#header,
-nav {
+#header {
   height: 40px;
   line-height: 40px;
 }
 
-#header a,
+#header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header a.active, #header a:hover {
+  color: #f7941d;
+}
+
+#header .account-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  min-width: 152px;
+  height: 40px;
+  text-align: right;
+  background-color: #2f3240;
+  border-top: 1px solid #f7941d;
+  display: none;
+}
+
+#header .account:hover .account-dropdown {
+  display: block;
+}
+
 #main-content a {
   text-decoration: none;
   color: #fff;
 }
 
-#header a:hover {
-  color: #f7941d;
-}
-
-#header a.active,
-#main-content a.active {
+#main-content a.active, #main-content a:hover {
   color: #f7941d;
 }
 
@@ -56,8 +74,12 @@ nav {
   background-color: #2f3240;
 }
 
-#main-content .history table td .ratio {
-  background-color: rgb(247, 148, 29);
+#main-content .history table {
+  border: 1px solid #444;
+}
+
+#main-content .history table .ratio {
+  background-color: #f7941d;
   opacity: 0.2;
 }
 
@@ -68,9 +90,10 @@ nav {
 }
 
 #main-content .orderbook {
-  height: 60%;
+  height: 55%;
   margin: 1px;
   background-color: #2f3240;
+  height: 60%;
 }
 
 #main-content .orderbook i {
@@ -79,23 +102,9 @@ nav {
 }
 
 #main-content .placeorder {
-  height: 40%;
+  height: 45%;
   margin: 1px;
   background-color: #2f3240;
+  height: 40%;
 }
-
-#header .account-dropdown {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  min-width: 152px;
-  height: 40px;
-  text-align: right;
-  background-color: #000;
-  border-top: 1px solid #f7941d;
-  display: none;
-}
-
-#header .account:hover .account-dropdown {
-  display: block;
-}
+/*# sourceMappingURL=custom.css.map */

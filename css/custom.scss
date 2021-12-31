@@ -1,0 +1,117 @@
+$vnd-color: #f7941d;
+$theme-color: #2f3240;
+
+@mixin topTheme {
+    height: 55%;
+    margin: 1px;
+    background-color: $theme-color;
+}
+
+@mixin bottomTheme {
+    height: 45%;
+    margin: 1px;
+    background-color: $theme-color;
+}
+
+@mixin aStyles {
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    a.active {
+        color: $vnd-color;
+    }
+
+    a:hover {
+        @extend a.active;
+    }
+}
+
+body {
+    font-family: Helvetica, Arial, Sans-Serif !important;
+    font-size: 13px !important;
+    color: #fff !important;
+
+}
+  
+table {
+    color: #fff !important;
+}
+  
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    height: 40px;
+    line-height: 40px;
+    
+    @include aStyles();
+
+    .account-dropdown {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        min-width: 152px;
+        height: 40px;
+        text-align: right;
+        background-color: $theme-color;
+        border-top: 1px solid $vnd-color;
+        display: none;
+    }
+
+    .account:hover .account-dropdown {
+        display: block;
+    }  
+}
+
+#main-content {
+
+    @include aStyles();
+
+    .row {
+        height: calc(100vh - 42px);
+    }
+
+    .chart {
+        @include topTheme();
+    }
+
+    .jq-chart {
+        @include bottomTheme();
+    }
+
+    .history {
+        @include topTheme();
+
+        table {
+            border: 1px solid #444;
+
+            .ratio {
+                background-color: rgb(247, 148, 29);
+                opacity: 0.2;
+            }
+        } 
+    }
+
+    .watchlist {
+        @include bottomTheme();
+    }
+
+    .orderbook {
+        @include topTheme();
+        height: 60%;
+
+        i {
+            color: $vnd-color;
+            cursor: pointer;
+        }
+    }
+
+    .placeorder {
+        @include bottomTheme();
+        height: 40%;
+    }
+}
